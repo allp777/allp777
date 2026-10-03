@@ -8,12 +8,12 @@
 
    Example:
    India number:
-  +919111086286
+  +918989777746
 
    + sign, spaces aur dashes nahi lagane hain.
 */
 
-const whatsappNumber = "+919111086286";
+const whatsappNumber = "+918989777746";
 
 
 /* =========================================
