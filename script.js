@@ -64,14 +64,7 @@ function openWhatsApp(event) {
 ========================================= */
 
 document.addEventListener("click", function () {
-
-    /*
-       Page par kahin bhi click hone par
-       WhatsApp open hoga.
-    */
-
-    const message =
-        "Hello, I need more information.";
+    const message = "Hello, I need more information.";
 
     const whatsappURL =
         "https://wa.me/" +
@@ -79,7 +72,13 @@ document.addEventListener("click", function () {
         "?text=" +
         encodeURIComponent(message);
 
+    // Google Ads conversion tracking
+    if (typeof gtag === "function") {
+        gtag("event", "conversion", {
+            send_to: "AW-18450183738/NqGwCJe2yP0cELrs3d1E"
+        });
+    }
+
+    // Open WhatsApp
     window.open(whatsappURL, "_blank");
-
 });
-
